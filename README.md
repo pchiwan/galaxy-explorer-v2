@@ -1,4 +1,4 @@
-# Galaxy explorer
+# Galaxy Explorer V2
 A galaxy exploration API implemented using Zeit Now's serverless functions
 
 Check it out here: https://galaxy-explorer-v2.now.sh/
