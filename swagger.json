@@ -1,0 +1,328 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "galaxy-explorer-v2",
+    "description": "A galaxy exploration API"
+  },
+  "basePath": "/api",
+  "schemes": ["https"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/clusters": {
+      "get": {
+        "description": "Get all clusters of galaxy",
+        "parameters": [],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/clusters/{clusterName}": {
+      "get": {
+        "description": "Get cluster information",
+        "parameters": [
+          {
+            "name": "clusterName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the cluster we want to explore",
+            "type": "string"
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ClusterInfo"
+            }
+          }
+        }
+      }
+    },
+    "/clusters/{clusterName}/systems": {
+      "get": {
+        "description": "Get all systems of cluster",
+        "parameters": [
+          {
+            "name": "clusterName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the cluster we want to explore",
+            "type": "string"
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ClusterSystems"
+            }
+          }
+        }
+      }
+    },
+    "/clusters/{clusterName}/systems/{systemName}": {
+      "get": {
+        "description": "Get system information",
+        "parameters": [
+          {
+            "name": "clusterName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the cluster we want to explore",
+            "type": "string"
+          },
+          {
+            "name": "systemName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the system we want to explore",
+            "type": "string"
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/SystemInfo"
+            }
+          }
+        }
+      }
+    },
+    "/clusters/{clusterName}/systems/{systemName}/planets": {
+      "get": {
+        "description": "Get all planets of system",
+        "parameters": [
+          {
+            "name": "clusterName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the cluster we want to explore",
+            "type": "string"
+          },
+          {
+            "name": "systemName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the system we want to explore",
+            "type": "string"
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/SystemPlanets"
+            }
+          }
+        }
+      }
+    },
+    "/clusters/{clusterName}/systems/{systemName}/planets/{planetName}": {
+      "get": {
+        "description": "Get system information",
+        "parameters": [
+          {
+            "name": "clusterName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the cluster we want to explore",
+            "type": "string"
+          },
+          {
+            "name": "systemName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the system we want to explore",
+            "type": "string"
+          },
+          {
+            "name": "planetName",
+            "in": "path",
+            "required": true,
+            "description": "Name of the planet we want to explore",
+            "type": "string"
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Planet"
+            }
+          }
+        }
+      }
+    },
+    "/locate/{planetName}": {
+      "parameters": [
+        {
+          "name": "planetName",
+          "in": "path",
+          "required": true,
+          "description": "Name of the planet to locate",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "summary": "Locate a planet in the galaxy",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/gasgiants": {
+      "parameters": [],
+      "get": {
+        "summary": "List all gas giants in the galaxy",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Planet"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Cluster": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "systems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/System"
+          }
+        }
+      }
+    },
+    "ClusterInfo": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "systems": {
+          "type": "integer"
+        }
+      }
+    },
+    "ClusterSystems": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "systems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "SystemInfo": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "stellarMass": {
+          "type": "string"
+        },
+        "stellarClass": {
+          "type": "string"
+        },
+        "hasMassRelay": {
+          "type": "boolean"
+        },
+        "planets": {
+          "type": "integer"
+        }
+      }
+    },
+    "SystemPlanets": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "planets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "System": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "stellarMass": {
+          "type": "string"
+        },
+        "stellarClass": {
+          "type": "string"
+        },
+        "hasMassRelay": {
+          "type": "boolean"
+        },
+        "planets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Planet"
+          }
+        }
+      }
+    },
+    "Planet": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "dayLength": {
+          "type": "string"
+        },
+        "orbitalPeriod": {
+          "type": "string"
+        },
+        "orbitalDistance": {
+          "type": "string"
+        },
+        "temp": {
+          "type": "string"
+        },
+        "radius": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
