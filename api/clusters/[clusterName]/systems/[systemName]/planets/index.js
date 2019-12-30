@@ -5,7 +5,7 @@ module.exports = function (req, res) {
   const system = findSystem(req.query.clusterName, req.query.systemName);
   if (system) {
     res.status(HTTP_OK);
-    res.send({
+    res.json({
       name: system.name,
       planets: system.planets.map(p => p.name)
     });

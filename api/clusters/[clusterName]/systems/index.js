@@ -6,7 +6,7 @@ module.exports = function (req, res) {
 
   if (cluster) {
     res.status(HTTP_OK);
-    res.send({
+    res.json({
       name: cluster.name,
       systems: cluster.systems.map(s => s.name)
     });

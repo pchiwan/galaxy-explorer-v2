@@ -6,7 +6,7 @@ module.exports = function (req, res) {
 
   if (system) {
     res.status(HTTP_OK);
-    res.send(system.info);
+    res.json(system.info);
   } else {
     res.status(HTTP_NOT_FOUND);
   }

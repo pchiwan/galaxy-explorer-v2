@@ -10,7 +10,7 @@ module.exports = function (req, res) {
 
   if (planet) {
     res.status(HTTP_OK);
-    res.send(planet);
+    res.json(planet);
   } else {
     res.status(HTTP_NOT_FOUND);
   }

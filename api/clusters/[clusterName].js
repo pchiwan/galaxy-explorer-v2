@@ -6,7 +6,7 @@ module.exports = function (req, res) {
 
   if (cluster) {
     res.status(HTTP_OK);
-    res.send(cluster.info);
+    res.json(cluster.info);
   } else {
     res.status(HTTP_NOT_FOUND);
   }
