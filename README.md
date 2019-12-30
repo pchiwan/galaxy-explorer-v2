@@ -1,6 +1,8 @@
 # Galaxy explorer
 A galaxy exploration API implemented using Zeit Now's serverless functions
 
+Check it out here: https://galaxy-explorer-v2.now.sh/
+
 ## Endpoints
 
 ### GET `/api/clusters/{clusterName}`
