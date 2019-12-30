@@ -86,15 +86,11 @@ function locatePlanet (planetName) {
     return null;
   }
 
-  const clusterName = cluster.name;
-  const systemName = cluster.systems[0].name;
-  const name = cluster.systems[0].planets[0].name;
-
-  return [
-    `<a href="/api/clusters/${clusterName}">${clusterName}</a>`,
-    `<a href="/api/clusters/${clusterName}/systems/${systemName}">${systemName}</a>`,
-    `<a href="/api/clusters/${clusterName}/systems/${systemName}/planets/${name}">${name}</a>`
-  ].join(' ==> ');
+  return {
+    cluster: cluster.name,
+    system: cluster.systems[0].name,
+    planet: cluster.systems[0].planets[0].name
+  };
 }
 
 function getGasGiants () {
