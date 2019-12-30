@@ -1,7 +1,7 @@
 {
   "name": "galaxy-explorer-v2",
   "version": "1.0.0",
-  "description": "A galaxy exploration API",
+  "description": "A galaxy exploration API implemented using Zeit Now's serverless functions",
   "main": "src/api/index.js",
   "scripts": {
     "start": "now dev"
