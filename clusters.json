@@ -2829,15 +2829,339 @@
   },
   {
     "name": "Aethon Cluster",
-    "systems": []
-  },
-  {
-    "name": "Nubian Expanse",
-    "systems": []
+    "systems": [{
+      "name": "Aru",
+      "stellarMass": "1.06 Sol Masses",
+      "stellarClass": "G",
+      "massRelay": true,
+      "planets": [{
+        "name": "Jak Ser",
+        "dayLength": "35.3 Earth Hours",
+        "orbitalDistance": "0.6 AU",
+        "orbitalPeriod": "0.4 Earth Years",
+        "temp": "416 \u00b0C",
+        "radius": "10,792 km"
+      }, {
+        "name": "Irune",
+        "dayLength": "36.2 Earth Hours",
+        "orbitalDistance": "1.3 AU",
+        "orbitalPeriod": "1.5 Earth Years",
+        "temp": "9 \u00b0C",
+        "radius": "11,525 km"
+      }, {
+        "name": "Locil",
+        "dayLength": "10.6 Earth Hours",
+        "orbitalDistance": "5.8 AU",
+        "orbitalPeriod": "14.0 Earth Years",
+        "temp": "N\/A",
+        "radius": "52,635 km"
+      }, {
+        "name": "Cherk Sab",
+        "dayLength": "12.1 Earth Hours",
+        "orbitalDistance": "10.4 AU",
+        "orbitalPeriod": "33.6 Earth Years",
+        "temp": "N\/A",
+        "radius": "39,139 km"
+      }, {
+        "name": "Doldit",
+        "dayLength": "10.6 Earth Hours",
+        "orbitalDistance": "20.8 AU",
+        "orbitalPeriod": "95.2 Earth Years",
+        "temp": "N\/A",
+        "radius": "28,982 km"
+      }]
+    }, {
+      "name": "Esori",
+      "stellarMass": "N\/A",
+      "stellarClass": "N\/A",
+      "planets": [{
+        "name": "Mola",
+        "dayLength": "18.4 Earth Hours",
+        "orbitalDistance": "0.3 AU",
+        "orbitalPeriod": "0.1 Earth Years",
+        "temp": "625 \u00b0C",
+        "radius": "7,608 km"
+      }, {
+        "name": "Atos Irn",
+        "dayLength": "40.4 Earth Hours",
+        "orbitalDistance": "1.0 AU",
+        "orbitalPeriod": "1.0 Earth Years",
+        "temp": "141 \u00b0C",
+        "radius": "7,556 km"
+      }, {
+        "name": "Yan Tao",
+        "dayLength": "37.9 Earth Hours",
+        "orbitalDistance": "1.6 AU",
+        "orbitalPeriod": "2.0 Earth Years",
+        "temp": "325 \u00b0C",
+        "radius": "11,460 km"
+      }, {
+        "name": "Kailo",
+        "dayLength": "93.9 Earth Hours",
+        "orbitalDistance": "3.2 AU",
+        "orbitalPeriod": "5.7 Earth Years",
+        "temp": "-93 \u00b0C",
+        "radius": "11,489 km"
+      }, {
+        "name": "Solu Paolis",
+        "dayLength": "14.7 Earth Hours",
+        "orbitalDistance": "6.6 AU",
+        "orbitalPeriod": "17.2 Earth Years",
+        "temp": "N\/A",
+        "radius": "28,567 km"
+      }]
+    }, {
+      "name": "Nura",
+      "stellarMass": "N\/A",
+      "stellarClass": "N\/A",
+      "planets": [{
+        "name": "Lahu",
+        "dayLength": "53.6 Earth Hours",
+        "orbitalDistance": "1.1 AU",
+        "orbitalPeriod": "1.2 Earth Years",
+        "temp": "0.85 \u00b0C",
+        "radius": "8,616 km"
+      }, {
+        "name": "Oma Ker",
+        "dayLength": "25.4 Earth Hours",
+        "orbitalDistance": "2.0 AU",
+        "orbitalPeriod": "2.7 Earth Years",
+        "temp": "16 \u00b0C",
+        "radius": "6,739 km"
+      }, {
+        "name": "Welm Urun",
+        "dayLength": "16.4 Earth Hours",
+        "orbitalDistance": "6.8 AU",
+        "orbitalPeriod": "17.7 Earth Years",
+        "temp": "N\/A",
+        "radius": "62,522 km"
+      }, {
+        "name": "Gorgun",
+        "dayLength": "13.0 Earth Hours",
+        "orbitalDistance": "13.4 AU",
+        "orbitalPeriod": "49.2 Earth Years",
+        "temp": "N\/A",
+        "radius": "67,733 km"
+      }]
+    }, {
+      "name": "Satu Arrd",
+      "stellarMass": "0.973 Sol Masses",
+      "stellarClass": "G",
+      "planets": [{
+        "name": "Poloh Tem",
+        "dayLength": "35.8 Earth Hours",
+        "orbitalDistance": "2.1 AU",
+        "orbitalPeriod": "3.1 Earth Years",
+        "temp": "262 \u00b0C",
+        "radius": "5,738 km"
+      }, {
+        "name": "Rilar",
+        "dayLength": "23.2 Earth Hours",
+        "orbitalDistance": "3.0 AU",
+        "orbitalPeriod": "5.3 Earth Years",
+        "temp": "28 \u00b0C",
+        "radius": "5,082 km"
+      }, {
+        "name": "Nalisin",
+        "dayLength": "20.6 Earth Hours",
+        "orbitalDistance": "23.4 AU",
+        "orbitalPeriod": "113.6 Earth Years",
+        "temp": "-156 \u00b0C",
+        "radius": "4,494 km"
+      }]
+    }]
   },
   {
     "name": "Petra Nebula",
-    "systems": []
+    "systems": [{
+      "name": "Vetus",
+      "stellarMass": "N\/A",
+      "stellarClass": "N\/A",
+      "massRelay": true,
+      "planets": [{
+        "name": "Tyre",
+        "dayLength": "23.2 Earth Hours",
+        "orbitalDistance": "0.65 AU",
+        "orbitalPeriod": "0.5 Earth Years",
+        "temp": "414 \u00b0C",
+        "radius": "5,846 km"
+      }, {
+        "name": "Elysium",
+        "dayLength": "27.9 Earth Hours",
+        "orbitalDistance": "1.3 AU",
+        "orbitalPeriod": "1.5 Earth Years",
+        "temp": "8 \u00b0C",
+        "radius": "5,723 km"
+      }, {
+        "name": "Sidon",
+        "dayLength": "31.6 Earth Hours",
+        "orbitalDistance": "2.3 AU",
+        "orbitalPeriod": "3.5 Earth Years",
+        "temp": "-62 \u00b0C",
+        "radius": "7,645 km"
+      }, {
+        "name": "Joppa",
+        "dayLength": "8.7 Earth Hours",
+        "orbitalDistance": "4.4 AU",
+        "orbitalPeriod": "9.2 Earth Years",
+        "temp": "N\/A",
+        "radius": "58,415 km"
+      }, {
+        "name": "Gilead",
+        "dayLength": "24.7 Earth Hours",
+        "orbitalDistance": "8.7 AU",
+        "orbitalPeriod": "25.7 Earth Years",
+        "temp": "-164 \u00b0C",
+        "radius": "2,102 km"
+      }]
+    }]
+  },
+  {
+    "name": "Nubian Expanse",
+    "systems": [{
+      "name": "Dakka",
+      "stellarMass": "1.0 Sol Masses",
+      "stellarClass": "G",
+      "massRelay": true,
+      "planets": [{
+        "name": "Bannik",
+        "dayLength": "54.8 Earth Hours",
+        "orbitalDistance": "0.73 AU",
+        "orbitalPeriod": "0.6 Earth Years",
+        "temp": "599 \u00b0C",
+        "radius": "7,963 km"
+      }, {
+        "name": "Pragia",
+        "dayLength": "29.6 Earth Hours",
+        "orbitalDistance": "1.3 AU",
+        "orbitalPeriod": "1.5 Earth Years",
+        "temp": "54 \u00b0C",
+        "radius": "5,137 km"
+      }, {
+        "name": "Alkonost",
+        "dayLength": "18.8 Earth Hours",
+        "orbitalDistance": "2.47 AU",
+        "orbitalPeriod": "3.9 Earth Years",
+        "temp": "N\/A",
+        "radius": "17,946 km"
+      }, {
+        "name": "Gamayun",
+        "dayLength": "65.6 Earth Hours",
+        "orbitalDistance": "5.19 AU",
+        "orbitalPeriod": "11.8 Earth Years",
+        "temp": "N\/A",
+        "radius": "50,875 km"
+      }, {
+        "name": "Zirnitra",
+        "dayLength": "44.9 Earth Hours",
+        "orbitalDistance": "7.78 AU",
+        "orbitalPeriod": "21.8 Earth Years",
+        "temp": "-158 \u00b0C",
+        "radius": "2,683 km"
+      }]
+    }, {
+      "name": "Kalabsha",
+      "stellarMass": "1.0 Sol Masses",
+      "stellarClass": "G",
+      "planets": [{
+        "name": "Yamm",
+        "dayLength": "69.6 Earth Hours",
+        "orbitalDistance": "2.0 AU",
+        "orbitalPeriod": "2.8 Earth Years",
+        "temp": "34 \u00b0C",
+        "radius": "6,501 km"
+      }, {
+        "name": "Tefnut",
+        "dayLength": "8.8 Earth Hours",
+        "orbitalDistance": "4.1 AU",
+        "orbitalPeriod": "8.3 Earth Years",
+        "temp": "N\/A",
+        "radius": "57,010 km"
+      }]
+    }, {
+      "name": "Qertassi",
+      "stellarMass": "40.7 Sol Masses",
+      "stellarClass": "GIII",
+      "massRelay": true,
+      "planets": [{
+        "name": "Norehsa",
+        "dayLength": "19.2 Earth Hours",
+        "orbitalDistance": "6.17 AU",
+        "orbitalPeriod": "2.4 Earth Years",
+        "temp": "N\/A",
+        "radius": "42,214 km"
+      }]
+    }]
+  },
+  {
+    "name": "Arcturus Stream",
+    "systems": [{
+      "name": "Arcturus",
+      "stellarMass": "1.1 Sol Masses",
+      "stellarClass": "K1.5 III",
+      "massRelay": true,
+      "planets": [{
+        "name": "Alcyoneus",
+        "dayLength": "61.6 Earth Hours",
+        "orbitalDistance": "2.1 AU",
+        "orbitalPeriod": "0.6 Earth Years",
+        "temp": "-23 \u00b0C",
+        "radius": "1,052 km"
+      }, {
+        "name": "Themis",
+        "dayLength": "14.1 Earth Hours",
+        "orbitalDistance": "3.5 AU",
+        "orbitalPeriod": "1.3 Earth Years",
+        "temp": "N\/A",
+        "radius": "56,484 km"
+      }, {
+        "name": "Eirene",
+        "dayLength": "10.3 Earth Hours",
+        "orbitalDistance": "6.8 AU",
+        "orbitalPeriod": "3.6 Earth Years",
+        "temp": "N\/A",
+        "radius": "44,077 km"
+      }, {
+        "name": "Eunomia",
+        "dayLength": "63.6 Earth Hours",
+        "orbitalDistance": "13.4 AU",
+        "orbitalPeriod": "10.0 Earth Years",
+        "temp": "-170 \u00b0C",
+        "radius": "4,758 km"
+      }]
+    }, {
+      "name": "Euler",
+      "stellarMass": "N\/A",
+      "stellarClass": "N\/A",
+      "planets": [{
+        "name": "Fermi",
+        "dayLength": "60.0 Earth Hours",
+        "orbitalDistance": "0.6 AU",
+        "orbitalPeriod": "0.4 Earth Years",
+        "temp": "358 \u00b0C",
+        "radius": "4,194 km"
+      }, {
+        "name": "Benning",
+        "orbitalDistance": "1.1 AU",
+        "orbitalPeriod": "0.9 Earth Years",
+        "temp": "63 \u00b0C",
+        "radius": "9,362 km"
+      }, {
+        "name": "Yukawa",
+        "dayLength": "64.9 Earth Hours",
+        "orbitalDistance": "2.2 AU",
+        "orbitalPeriod": "2.7 Earth Years",
+        "temp": "-27 \u00b0C",
+        "radius": "2,943 km"
+      }, {
+        "name": "Silva",
+        "dayLength": "17.7 Earth Hours",
+        "orbitalDistance": "4.1 AU",
+        "orbitalPeriod": "6.8 Earth Years",
+        "temp": "N\/A",
+        "radius": "31,096 km"
+      }]
+    }]
   },
   {
     "name": "Omega Nebula",
@@ -2849,10 +3173,6 @@
   },
   {
     "name": "Pylos Nebula",
-    "systems": []
-  },
-  {
-    "name": "Arcturus Stream",
     "systems": []
   },
   {
