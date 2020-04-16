@@ -6,7 +6,7 @@
     "description": "A galaxy exploration API"
   },
   "basePath": "/api",
-  "schemes": ["https"],
+  "schemes": ["https", "http"],
   "consumes": ["application/json"],
   "produces": ["application/json"],
   "paths": {
